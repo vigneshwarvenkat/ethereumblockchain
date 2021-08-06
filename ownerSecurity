@@ -18,6 +18,14 @@ contract MyContract{//like a class
         string _firstname;
         string _lastname;
     }
+        
+    /* uint256 openingTime = 1628243035; //get current epoch time
+    
+    modifier onlyWhileOpen(){//write the logic such that whoever is calling this function satisfies requirement
+        require (block.timestamp >= openingTime);  //if after opening time, you can call this function
+        //block.timestamp is the timestamp of the current block in the chain
+        _;
+    }*/
     
     constructor() public{
         owner = msg.sender; //msg.sender is the account that deploys the smart contract and set it to owner status
